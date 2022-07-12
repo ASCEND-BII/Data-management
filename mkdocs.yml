@@ -1,6 +1,5 @@
 site_name: BII ASCEND
-theme:
-    name: rtd-dropdown
+theme: rtd-dropdown
 nav:
   - Home: 'index.md'
   - About:
