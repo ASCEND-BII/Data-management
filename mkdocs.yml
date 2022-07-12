@@ -1,14 +1,6 @@
 site_name: BII ASCEND
 theme:
-    features:
-    - search.highlight
-    plugins:
-    - search:
-        lang: en
-    name: material
-    palette: 
-      primary: teal
-      accent: indigo
+    name: rtd-dropdown
 nav:
   - Home: 'index.md'
   - About:
