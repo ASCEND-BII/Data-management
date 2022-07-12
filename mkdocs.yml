@@ -1,0 +1,16 @@
+site_name: BII ASCEND
+theme:
+    features:
+    - search.highlight
+    plugins:
+    - search:
+        lang: en
+    name: material
+    palette: 
+      primary: teal
+      accent: indigo
+nav:
+  - Home: 'index.md'
+  - About:
+    - License: ''
+    - Release Notes: ''
