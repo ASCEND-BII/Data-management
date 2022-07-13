@@ -4,17 +4,17 @@ theme:
   logo: 'Logo+circle.png'
   palette:
     - scheme: default
-      primary: blue grey
-      accent: green
+      primary: indigo
+      accent: indigo
       toggle:
+        icon: material/toggle-switch
         name: Switch to light mode
-        icon: material/weather-sunny
     - scheme: slate
       primary: blue
-      accent: lime green
+      accent: blue
       toggle:
+        icon: material/toggle-switch-off-outline
         name: Switch to dark mode
-        icon: material/weather-night
   features:
     - navigation.tabs
     - navigation.tabs.sticky
@@ -28,7 +28,7 @@ theme:
 nav:
   - Home: 'index.md'
   - Getting Started: 'Getting-Started.md'
-  - Test: ''
+  - Testing: ''
   - Institutions:
     - University of Minnesota:
       - Publications: 'UMNpublications.md'
