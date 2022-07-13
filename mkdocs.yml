@@ -4,16 +4,16 @@ theme:
   logo: 'Logo+circle.png'
   palette:
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: blue grey
+      accent: green
       toggle:
-        icon: material/toggle-switch
+        icon: material/weather-sunny
         name: Switch to light mode
     - scheme: slate
       primary: blue
-      accent: blue
+      accent: lime green
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-night
         name: Switch to dark mode
   features:
     - navigation.tabs
