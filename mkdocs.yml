@@ -3,23 +3,18 @@ theme:
   name: material
   logo: 'Logo+circle.png'
   palette:
-
-    # Palette toggle for light mode
     - scheme: default
       primary: blue grey
       accent: green
       toggle:
+        name: Switch to light mode
         icon: material/weather-sunny
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
     - scheme: slate
       primary: blue
-      accent: lime
+      accent: lime green
       toggle:
+        name: Switch to dark mode
         icon: material/weather-night
-        name: Switch to system preference
-
   features:
     - navigation.tabs
     - navigation.tabs.sticky
