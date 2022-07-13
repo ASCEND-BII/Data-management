@@ -28,6 +28,7 @@ theme:
 nav:
   - Home: 'index.md'
   - Getting Started: 'Getting-Started.md'
+  - Test: ''
   - Institutions:
     - University of Minnesota:
       - Publications: 'UMNpublications.md'
