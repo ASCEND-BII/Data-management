@@ -1,32 +1,33 @@
 site_name: BII ASCEND
 theme:
   name: material
-  logo: Logo+circle.png
+  logo: 'Logo+circle.png'
   palette:
 
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-
     # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default 
+    - scheme: default
+      primary: blue grey
+      accent: green
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-sunny
         name: Switch to dark mode
 
     # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
+      primary: blue
+      accent: lime
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-night
         name: Switch to system preference
-
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
 nav:
   - Home: 'index.md'
   - Institutions:
-    - University of Minnesota: 'sampleUMN.md'
-    - University of Wisconsin: 'sampleUW.md'
+    - University of Minnesota:
+      - Cavender-Bares Lab: 'sampleUMN.md'
+      - Reich Lab: 'sampleUMN.md'
+    - University of Wisconsin:
+      - Townsend: 'sampleUW.md'
   - About: ''
