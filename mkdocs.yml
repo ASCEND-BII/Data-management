@@ -22,12 +22,22 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.top
+    - navigation.prune
+    - search.highlight
+    - search.share
+  plugins:
+    - search
+    - offline
 nav:
   - Home: 'index.md'
+  - Getting Started: 'Getting-Started.md'
   - Institutions:
     - University of Minnesota:
-      - Cavender-Bares Lab: 'sampleUMN.md'
-      - Reich Lab: 'sampleUMN.md'
+      - Publications: 'UMNpublications.md'
+      - Presentations/Conferences/Seminars: ''
     - University of Wisconsin:
-      - Townsend: 'sampleUW.md'
+      - Data Management: 'sampleUW.md'
+      - Publications: 'UWpublications.md'
+      - Presentations/Conferences/Seminars: ''
   - About: ''
