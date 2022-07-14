@@ -22,14 +22,30 @@ theme:
     - navigation.prune
     - search.highlight
     - search.share
+  font:
+    code: Playfair Display
+  icon:
+    repo: fontawesome/brands/github-alt
 plugins:
   - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      enable_revision_date: true
+  - git-committers:
+      repository: ASCEND-BII/Data-management
+      token: !ENV GH_TOKEN
 repo_url: https://github.com/ASCEND-BII/Data-management
+repo_name: ASCEND-BII/Data-management
+edit_uri: ""
 nav:
   - Home: 'index.md'
   - Getting Started: 'Getting-Started.md'
   - Test: ''
   - Institutions:
+    - Colorado State University: 'sampleUW.md'
+    - University of Cambridge: 'sampleUW.md'
+    - University of Illinois: 'sampleUW.md'
+    - University of Maine: 'sampleUW.md'
     - University of Minnesota:
       - Publications: 'UMNpublications.md'
       - Presentations/Conferences/Seminars: ''
