@@ -22,13 +22,13 @@ theme:
     - navigation.prune
     - search.highlight
     - search.share
-  plugins:
-    - search
-    - offline
+plugins:
+  - search
+repo_url: https://github.com/ASCEND-BII/Data-management
 nav:
   - Home: 'index.md'
   - Getting Started: 'Getting-Started.md'
-  - Testing: ''
+  - Test: ''
   - Institutions:
     - University of Minnesota:
       - Publications: 'UMNpublications.md'
