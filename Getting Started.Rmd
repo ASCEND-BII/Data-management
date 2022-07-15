@@ -3,3 +3,4 @@ title: "Getting Started"
 output: github_document
 ---
 
+Details on how to use the site

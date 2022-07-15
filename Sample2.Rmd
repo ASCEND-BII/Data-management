@@ -1,0 +1,9 @@
+---
+title: "Theme 2"
+output: github_document
+---
+
+|Description|Institution|Location of Data|Path to Data|Server|
+|-----------|-----------|----------------|-------------------|
+|Leaf level spectra of FAB trees|University of Minnesota|Cedar Creek Ecosystem Science Reserve|Lab-cavender/4_Project_Folders/Cedar_Creek/FAB2/Data/Spectra|UMN CBS shared drive|
+|Canopy level spectra of FAB trees|University of Minnesita|Cedar Creek Ecosystem Science Reserve|Lab-cavender/4_Project_Folders/Cedar_Creek/FAB2/Data/spectra|UMN CVS shared drive|
