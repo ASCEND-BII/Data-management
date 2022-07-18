@@ -175,7 +175,7 @@ function init_decryptor() {
     var password_input = document.getElementById('mkdocs-content-password'),
         encrypted_content = document.getElementById('mkdocs-encrypted-content'),
         decrypted_content = document.getElementById('mkdocs-decrypted-content'),
-        
+        decrypt_button = document.getElementById("mkdocs-decrypt-button"),
         decrypt_form = document.getElementById('mkdocs-decrypt-form');
     // adjust password field width to placeholder length
     let input = document.getElementById("mkdocs-content-password");
@@ -199,7 +199,24 @@ function init_decryptor() {
         }
     };
 
-    
+    /* If password_button is set, try decrypt content when button is press */
+    if (decrypt_button) {
+        decrypt_button.onclick = function(event) {
+            event.preventDefault();
+            var content_decrypted = decrypt_action(
+                password_input, encrypted_content, decrypted_content
+            );
+            if (content_decrypted) {
+                // keep password value on localStorage with specific path (relative)
+                setItemExpiry(document.location.pathname, password_input.value, 1000*3600*24);
+                // continue to decrypt others parts
+                
+                
+            } else {
+                // TODO ?
+            };
+        };
+    }
 
     /* Default, try decrypt content when key (ctrl) enter is press */
     password_input.addEventListener('keypress', function(event) {
