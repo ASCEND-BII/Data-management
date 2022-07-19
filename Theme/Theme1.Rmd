@@ -1,5 +1,5 @@
 ---
-password: <spectraASCEND124>
+password: spectra
 ---
 
 # Theme 1
