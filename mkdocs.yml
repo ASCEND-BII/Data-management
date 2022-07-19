@@ -1,7 +1,7 @@
 site_name: BII ASCEND
 theme:
   name: material
-  logo: 'Logo+circle.png'
+  logo: 'Images/Logo+circle.png'
   palette:
     - scheme: default
       primary: blue grey
@@ -34,23 +34,22 @@ plugins:
   - git-committers:
       repository: ASCEND-BII/Data-management
       token: !ENV GH_TOKEN
+  - git-authors
+  - table-reader
+  - tags
+markdown_extensions:
+  - meta
+  - attr_list
+  - md_in_html
 repo_url: https://github.com/ASCEND-BII/Data-management
 repo_name: ASCEND-BII/Data-management
 edit_uri: ""
 nav:
   - Home: 'index.md'
-  - Getting Started: 'Getting-Started.md'
-  - Test: ''
-  - Institutions:
-    - Colorado State University: 'sampleUW.md'
-    - University of Cambridge: 'sampleUW.md'
-    - University of Illinois: 'sampleUW.md'
-    - University of Maine: 'sampleUW.md'
-    - University of Minnesota:
-      - Publications: 'UMNpublications.md'
-      - Presentations/Conferences/Seminars: ''
-    - University of Wisconsin:
-      - Data Management: 'sampleUW.md'
-      - Publications: 'UWpublications.md'
-      - Presentations/Conferences/Seminars: ''
-  - About: ''
+  - Guide: 'Getting-Started.md'
+  - Data:
+    - Theme 1: 'Theme/Theme1.md'
+    - Theme 2: 'Theme/Theme2.md'
+    - Theme 3: 'Theme/Theme3.md'
+    - Theme 4: 'Theme/Theme4.md'
+    - Theme 5: 'Theme/Theme5.md'

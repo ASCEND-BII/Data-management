@@ -1,2 +1,6 @@
 ---
-sample UW
+title: "About the webpage"
+output: github_document
+---
+
+![Advancing Spectral biology in Changing ENvironments to understand Diversity](docs/Images/logo circle.png){: style="height:150px;width:150px"}
