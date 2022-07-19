@@ -38,9 +38,6 @@ plugins:
   - table-reader
   - tags
   - encryptcontent:
-      remember_password: True
-      password_button: True
-      password_button_text: 'ENTER'
 markdown_extensions:
   - meta
   - attr_list
