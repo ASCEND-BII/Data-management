@@ -1,12 +1,9 @@
 ---
 hide: toc
-password: spectra
 ---
-
-
 #**A**dvancing **S**pectral biology in **C**hanging **EN**vironments to understand **D**iversity
 
-![Logo](Images/logo circle.png){ align=right }
+![Logo](Images/Logo circle.png){ align=right }
 
 ## Data management for ASCEND
 

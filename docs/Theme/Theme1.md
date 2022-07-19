@@ -1,3 +1,7 @@
+---
+password: spectra
+---
+
 Theme 1
 ================
 
