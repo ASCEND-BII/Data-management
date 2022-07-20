@@ -1,7 +1,8 @@
 ---
-title: "Theme 4: How species interactions within communities and ecosystems influence local carbon and other biogeochemical cycles at ecosystem and landscape scales"
+title: "Theme 4"
 output: github_document
 ---
+How species interactions within communities and ecosystems influence local carbon and other biogeochemical cycles at ecosystem and landscape scales
 
 #### Products
 
