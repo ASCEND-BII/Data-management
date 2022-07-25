@@ -1,5 +1,5 @@
 ---
-password: spectra
+hide: footer
 ---
 
 Theme 1

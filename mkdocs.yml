@@ -22,6 +22,7 @@ theme:
     - navigation.prune
     - search.highlight
     - search.share
+    - header.autohide
   font:
     code: Playfair Display
   icon:
@@ -33,11 +34,11 @@ plugins:
       enable_revision_date: true
   - git-committers:
       repository: ASCEND-BII/Data-management
-      token: !ENV GH_TOKEN
+      token: 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
   - git-authors
   - table-reader
   - tags
-  - encryptcontent:
+  - encryptcontent
 markdown_extensions:
   - meta
   - attr_list
@@ -47,7 +48,6 @@ repo_name: ASCEND-BII/Data-management
 edit_uri: ""
 nav:
   - Home: 'index.md'
-  - Guide: 'Getting-Started.md'
   - Data:
     - Theme 1: 'Theme/Theme1.md'
     - Theme 2: 'Theme/Theme2.md'

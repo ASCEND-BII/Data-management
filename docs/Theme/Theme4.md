@@ -1,18 +1,33 @@
+---
+hide: footer
+---
+
 Theme 4
 ================
 
-## How species interactions within communities and ecosystems influence local carbon and other biogeochemical cycles at ecosystem and landscape scales
+How species interactions within communities and ecosystems influence
+local carbon and other biogeochemical cycles at ecosystem and landscape
+scales
 
-| Description                       | Institution             | Location of Data Collection           | Path to Data                                                 | Server               | DOI |
-|-----------------------------------|-------------------------|---------------------------------------|--------------------------------------------------------------|----------------------|-----|
-| Leaf level spectra of FAB trees   | University of Minnesota | Cedar Creek Ecosystem Science Reserve | Lab-cavender/4_Project_Folders/Cedar_Creek/FAB2/Data/Spectra | UMN CBS shared drive |     |
-| Canopy level spectra of FAB trees | University of Minnesita | Cedar Creek Ecosystem Science Reserve | Lab-cavender/4_Project_Folders/Cedar_Creek/FAB2/Data/spectra | UMN CVS shared drive |     |
+#### Products
 
-|                             | Definition                                 |
-|-----------------------------|--------------------------------------------|
-| Description                 | Brief description including type of data   |
-| Institution                 | Primary institution that acquired the data |
-| Location of Data Collection | Where was the data collected               |
-| Path to Data                | Path to data storage                       |
-| Server                      | Server name                                |
-| DOI                         | Applicable if used in publication          |
+[Theme 4 Products
+Summary](https://docs.google.com/spreadsheets/d/1uzynWDDNeQ5gO2KXgn_EYNeGsWQNk_kUc6D1uNnu6XQ/edit?usp=sharing)
+
+##### 2022
+
+1.  Cavender-Bares et al. 2022. Remotely detected aboveground plant
+    function predicts belowground processes in two prairie diversity
+    experiments. Ecological Monographs, e01488.
+    <https://doi.org//ecm.1488>.
+    -   Data: [UMN Data
+        Repository](https://doi.org/10.13020/fvdj-zv57)  
+    -   Code: [UMN Data Repository](https://doi.org/10.13020/fvdj-zv57)
+2.  Schweiger et al. 2022. Coupling spectral and resource-use
+    complementarity in experimental grassland and forest communities.
+    Proceedings of the Royal Society B, 288: 2021 1290.
+    <https://doi.org/10.1098/rspb.2021.1290>.
+    -   Data: EcoSIS link [1](https://doi.org/10.21232/tYbmucPP) &
+        [2](https://doi.org/10.21232/gMpYDoyN)  
+    -   Code: [Github - Spectral
+        hypervolume](https://github.com/annakat/spectral_hypervolume)

@@ -1,3 +1,6 @@
+---
+hide: footer
+---
 Theme 2
 ================
 
@@ -5,9 +8,3 @@ Theme 2
 
 [Data table for Theme
 2](https://docs.google.com/spreadsheets/d/1GdhefyneqIbjArH5cVibGYC0rxqVi20_gEU_hSqxZ1g/edit?usp=sharing)
-
-## Ideas to include to fill up space
-
--   People involved in theme 2  
--   Include their individual projects/goals  
--   Pictures
