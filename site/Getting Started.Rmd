@@ -1,9 +1,0 @@
----
-title: "Getting Started"
-output: github_document
-hide: 
-  - navigation
-  - toc
----
-
-Details on how to use the site

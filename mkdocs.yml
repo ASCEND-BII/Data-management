@@ -24,7 +24,7 @@ theme:
     - search.share
     - header.autohide
   font:
-    code: Playfair Display
+    text: Playfair Display
   icon:
     repo: fontawesome/brands/github-alt
 plugins:
