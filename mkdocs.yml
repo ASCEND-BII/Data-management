@@ -24,7 +24,7 @@ theme:
     - search.share
     - header.autohide
   font:
-    text: Playfair Display
+    text: Uchen
   icon:
     repo: fontawesome/brands/github-alt
 plugins:
@@ -32,20 +32,22 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       enable_revision_date: true
-  - git-committers:
-      repository: ASCEND-BII/Data-management
-      token: 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
   - git-authors
   - table-reader
-  - tags
   - encryptcontent
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
 markdown_extensions:
   - meta
   - attr_list
   - md_in_html
+  - tables
 repo_url: https://github.com/ASCEND-BII/Data-management
 repo_name: ASCEND-BII/Data-management
 edit_uri: ""
+extra_css:
+  - css/extra.css
 nav:
   - Home: 'index.md'
   - Data:
