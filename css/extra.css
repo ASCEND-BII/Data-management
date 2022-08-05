@@ -1,0 +1,25 @@
+.md-typeset__table {
+   min-width: 100%;
+}
+
+.md-typeset table:not([class]) {
+    display: table;
+}
+
+<style>
+table th:first-of-type {
+    width: 2%;
+}
+table th:nth-of-type(2) {
+    width: 80%;
+}
+table th:nth-of-type(3) {
+    width: 3%;
+}
+table th:nth-of-type(4) {
+    width: 3%;
+}
+table th:nth-of-type(5) {
+    width: 2%;
+}
+</style>
