@@ -1,5 +1,7 @@
 ---
-hide: footer
+hide: 
+  - footer
+  - toc
 ---
 
 Theme 5
