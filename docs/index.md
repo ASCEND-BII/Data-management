@@ -23,14 +23,16 @@ Just click on the navigation tab [Data](https://ascend-bii.github.io/Data-manage
 
 [Theme 5: Advancing Earth System Models](https://ascend-bii.github.io/Data-management/Theme/Theme5/)
 
-|               | Definition                  |
-|---------------|-----------------------------|
-| Year          |Year                         | 
-| Citation      |Citation of product          |
-| DOI           |Digital Object Identifier    |
-| Data          |Direct link to data          |
-| Code          |Direct link to code          |
-| Theme(s)      |Additional themes associated with product|
+Below you can find a table describing the information provided for our published work.
+
+|           | Definition                  |
+|-----------|-----------------------------|
+| Year      |Year of publication          | 
+| Citation  |Complete bibliographic reference of the product|
+| DOI       |Digital Object Identifier    |
+| Data      |Direct link to data          |
+| Code      |Direct link to code          |
+| Theme(s)  |Additional themes associated with product, i.e., if the product is associated with more than one theme, the associated themes are also listed|
 
 *Note: We recommend using Safari, Google Chrome, and Firefox to navigate this webpage.
 
