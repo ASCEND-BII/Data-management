@@ -1,5 +1,5 @@
 .md-typeset__table {
-   min-width: 100%;
+   min-width: 120%;
 }
 
 .md-typeset table:not([class]) {
@@ -11,13 +11,13 @@ table th:first-of-type {
     width: 2%;
 }
 table th:nth-of-type(2) {
-    width: 80%;
+    width: 78%;
 }
 table th:nth-of-type(3) {
     width: 3%;
 }
 table th:nth-of-type(4) {
-    width: 3%;
+    width: 35%;
 }
 table th:nth-of-type(5) {
     width: 2%;
