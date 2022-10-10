@@ -13,15 +13,15 @@ One of the [ASCEND’s](https://www.spectralbiology.org/) core values is transpa
 
 Just click on the navigation tab [Data](https://ascend-bii.github.io/Data-management/Theme/Theme1) and you will find a comprehensive list of our published work and the links to the data and code used. Or click on the links below:
 
-[Theme 1: Intraspecific variation](https://ascend-bii.github.io/Data-management/Theme/Theme1/) 
+[Theme 1: Intraspecific variation](https://ascend-bii.github.io/Data-management/Theme/Theme1/){:target="\_blank"} 
 
-[Theme 2: Phenotypic variation across the tree of life](https://ascend-bii.github.io/Data-management/Theme/Theme2/)
+[Theme 2: Phenotypic variation across the tree of life](https://ascend-bii.github.io/Data-management/Theme/Theme2/){:target="\_blank"}
 
-[Theme 3: Assembly processes and ecosystem functioning](https://ascend-bii.github.io/Data-management/Theme/Theme3/)
+[Theme 3: Assembly processes and ecosystem functioning](https://ascend-bii.github.io/Data-management/Theme/Theme3/){:target="\_blank"}
 
-[Theme 4: Biogeochemical cycles at ecosystem and landscape scales](https://ascend-bii.github.io/Data-management/Theme/Theme4/)
+[Theme 4: Biogeochemical cycles at ecosystem and landscape scales](https://ascend-bii.github.io/Data-management/Theme/Theme4/){:target="\_blank"}
 
-[Theme 5: Advancing Earth System Models](https://ascend-bii.github.io/Data-management/Theme/Theme5/)
+[Theme 5: Advancing Earth System Models](https://ascend-bii.github.io/Data-management/Theme/Theme5/){:target="\_blank"}
 
 Below you can find a table describing the information provided for our published work.
 
