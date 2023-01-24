@@ -1,0 +1,107 @@
+---
+title: ""
+---
+
+# Theme 5
+
+### Advancing Earth System Models to integrate our understanding of how functional trait variation--- as determined spectrally across the tree of life and across ecosystems---influences global biogeochemical cycles and biosphere dynamics
+
+```{r echo=F, results='hide'}
+library(DT)
+library(data.table)
+publications <- fread("themes.csv")
+theme5 <- subset(publications, Theme == "5")
+theme5 <- theme5[, .SD, .SDcols = c(2:ncol(theme5))]
+
+#Data links ------------------------------------------------------------------------
+datalinks <- NA
+
+for(i in 1:nrow(theme5)) {
+  
+  cell_link <- NA
+  
+  data <- theme5$Data[i]
+  splitdata <- strsplit(data, split = ":&:")
+  
+  for(ii in 1:length(splitdata[[1]])) {
+    
+    name <- strsplit(splitdata[[1]][ii], split = "]")
+    base <- substr(name[[1]][1], 2, nchar(name[[1]][1]))
+    link <- substr(name[[1]][2], 2, (nchar(name[[1]][2])-1))
+    urls <-  paste0("<a href='",  link, "'>", base, "</a>")
+    
+    if(ii == 1) {
+      cell_link <- urls
+    } else if(ii == length(splitdata[[1]])){
+      cell_link <- paste0(cell_link, " and ", urls)
+    } else {
+      cell_link <- paste0(cell_link, ", ", urls)
+    }
+  }
+  
+  datalinks[i] <- cell_link
+  
+}
+
+theme5$Data <- datalinks
+
+#DOI -------------------------------------------------------------------------------
+doilinks <- NA
+
+for(i in 1:nrow(theme5)) {
+  
+  data <- theme5$DOI[i]
+  splitdata <- strsplit(data, split = "]")[[1]]
+  
+  base <- substr(splitdata[1], 2, nchar(splitdata[1]))
+  link <- substr(splitdata[2], 2, (nchar(splitdata[2])-1))
+  urls <-  paste0("<a href='",  link, "'>", base, "</a>")
+  
+  doilinks[i] <- urls
+  
+}
+
+theme5$DOI <- doilinks
+
+#Code links ------------------------------------------------------------------------
+codelinks <- NA
+
+for(i in 1:nrow(theme5)) {
+  
+  cell_link <- NA
+  
+  data <- theme5$Code[i]
+  splitdata <- strsplit(data, split = ":&:")
+  
+  if(length(splitdata[[1]]) == 0) {
+    codelinks[i] <- NA
+    
+  } else {
+    for(ii in 1:length(splitdata[[1]])) {
+      
+    name <- strsplit(splitdata[[1]][ii], split = "]")
+    base <- substr(name[[1]][1], 2, nchar(name[[1]][1]))
+    link <- substr(name[[1]][2], 2, (nchar(name[[1]][2])-1))
+    urls <-  paste0("<a href='",  link, "'>", base, "</a>")
+    
+    if(ii == 1) {
+      cell_link <- urls
+    } else if(ii == length(splitdata[[1]])){
+      cell_link <- paste0(cell_link, " and ", urls)
+    } else {
+      cell_link <- paste0(cell_link, ", ", urls)
+    }
+    
+  }
+  codelinks[i] <- cell_link
+  }
+}
+
+theme5$Code <- codelinks
+```
+
+<br>
+
+```{r echo=F}
+datatable(theme5, rownames= FALSE, escape = FALSE)
+```
