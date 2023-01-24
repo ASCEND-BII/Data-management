@@ -26,10 +26,9 @@ Just click on the navigation tab [Data](https://ascend-bii.github.io/Data-manage
 Below you can find a table describing the information provided for our published work.
 
 | Column   | Definition                                                                                                                                    |
-|----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+|------------|------------------------------------------------------------|
 | Year     | Year of publication                                                                                                                           |
-| Citation | Complete bibliographic reference of the product                                                                                               |
-| Link     | Link to the Digital Object Identifier                                                                                                         |
+| Citation | Bibliographic reference of the product                                                                                                        |
 | Data     | Direct link to data                                                                                                                           |
 | Code     | Direct link to code                                                                                                                           |
 | Theme(s) | Additional themes associated with product, i.e., if the product is associated with more than one theme, the associated themes are also listed |

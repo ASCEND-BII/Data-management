@@ -10,17 +10,17 @@ title: ""
 library(DT)
 library(data.table)
 publications <- fread("themes.csv")
-theme5 <- subset(publications, Theme == "5")
-theme5 <- theme5[, .SD, .SDcols = c(2:ncol(theme5))]
+theme <- subset(publications, Theme == "5")
+theme <- theme[, .SD, .SDcols = c(2:ncol(theme))]
 
 #Data links ------------------------------------------------------------------------
 datalinks <- NA
 
-for(i in 1:nrow(theme5)) {
+for(i in 1:nrow(theme)) {
   
   cell_link <- NA
   
-  data <- theme5$Data[i]
+  data <- theme$Data[i]
   splitdata <- strsplit(data, split = ":&:")
   
   for(ii in 1:length(splitdata[[1]])) {
@@ -43,31 +43,31 @@ for(i in 1:nrow(theme5)) {
   
 }
 
-theme5$Data <- datalinks
+theme$Data <- datalinks
 
 #DOI -------------------------------------------------------------------------------
 doilinks <- NA
 
-for(i in 1:nrow(theme5)) {
+for(i in 1:nrow(theme)) {
   
-  data <- theme5$Link[i]
-  urls <-  paste0("<a href='",  data, "'>", "Link", "</a>")
-  
-  doilinks[i] <- urls
+  data <- theme$Link[i]
+  DOI <- strsplit(data, split = "https://doi.org/")[[1]][2]
+  urls <-  paste0("<a href='",  data, "'>", DOI, "</a>")
+  doilinks[i] <- paste0("DOI: ", urls, ".")
   
 }
 
-theme5$Link <- doilinks
-theme5$Citation <- paste0(theme5$Citation, " ", theme5$Link)
+theme$Link <- doilinks
+theme$Citation <- paste0(theme$Citation, " ", theme$Link)
 
 #Code links ------------------------------------------------------------------------
 codelinks <- NA
 
-for(i in 1:nrow(theme5)) {
+for(i in 1:nrow(theme)) {
   
   cell_link <- NA
   
-  data <- theme5$Code[i]
+  data <- theme$Code[i]
   splitdata <- strsplit(data, split = ":&:")
   
   if(length(splitdata[[1]]) == 0) {
@@ -94,15 +94,15 @@ for(i in 1:nrow(theme5)) {
   }
 }
 
-theme5$Code <- codelinks
+theme$Code <- codelinks
 
 #--------------------------------------------------------------------
 # Selection of columns
-theme5 <- theme5[, .SD, .SDcols = c(1:2, 4:6)]
+theme <- theme[, .SD, .SDcols = c(1:2, 4:6)]
 ```
 
 <br>
 
 ```{r echo=F}
-datatable(theme5, rownames= FALSE, escape = FALSE)
+datatable(theme, rownames= FALSE, escape = FALSE)
 ```
