@@ -50,18 +50,15 @@ doilinks <- NA
 
 for(i in 1:nrow(theme3)) {
   
-  data <- theme3$DOI[i]
-  splitdata <- strsplit(data, split = "]")[[1]]
-  
-  base <- substr(splitdata[1], 2, nchar(splitdata[1]))
-  link <- substr(splitdata[2], 2, (nchar(splitdata[2])-1))
-  urls <-  paste0("<a href='",  link, "'>", base, "</a>")
+  data <- theme3$Link[i]
+  urls <-  paste0("<a href='",  data, "'>", "Link", "</a>")
   
   doilinks[i] <- urls
   
 }
 
-theme3$DOI <- doilinks
+theme3$Link <- doilinks
+theme3$Citation <- paste0(theme3$Citation, " ", theme3$Link)
 
 #Code links ------------------------------------------------------------------------
 codelinks <- NA
@@ -98,6 +95,10 @@ for(i in 1:nrow(theme3)) {
 }
 
 theme3$Code <- codelinks
+
+#--------------------------------------------------------------------
+# Selection of columns
+theme3 <- theme3[, .SD, .SDcols = c(1:2, 4:6)]
 ```
 
 <br>
