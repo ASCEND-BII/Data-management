@@ -11,15 +11,15 @@ website:
       text: Home
     - text: Data
       menu:
-      - href: files/Themes/Theme1.qmd
+      - href: themes/Theme1.qmd
         text: Theme 1
-      - href: files/Themes/Theme2.qmd
+      - href: themes/Theme2.qmd
         text: Theme 2
-      - href: files/Themes/Theme3.qmd
+      - href: themes/Theme3.qmd
         text: Theme 3
-      - href: files/Themes/Theme4.qmd
+      - href: themes/Theme4.qmd
         text: Theme 4
-      - href: files/Themes/Theme5.qmd
+      - href: themes/Theme5.qmd
         text: Theme 5
     - icon: github
       href: https://github.com/ASCEND-BII
