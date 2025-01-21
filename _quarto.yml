@@ -27,14 +27,14 @@ website:
       href: https://www.spectralbiology.org/
 
   page-footer: 
-    right: "Page updated on 2023-01-22"
+    right: "Page updated on 2025-01-21"
     left: "&copy; CC-By ASCEND"
     
 format:
   html:
     page-layout: full
     theme:
-      light: cosmo
+      light: bootstrap.min
     code-copy: true
     code-overflow: wrap
     toc: false
