@@ -2,19 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.36">
+<meta name="generator" content="quarto-1.6.40">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ASCEND - Data Management -</title>
+<title>theme3 – ASCEND - Data Management</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
 </style>
 
 
@@ -30,17 +35,23 @@ ul.task-list{list-style: none;}
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-94164ae534b4afe92a1a950a95353526.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -49,20 +60,32 @@ ul.task-list{list-style: none;}
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
+<link href="../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
 
-<script src="../site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
 <link href="../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
-<script src="../site_libs/datatables-binding-0.23/datatables.js"></script>
+
+<script src="../site_libs/datatables-binding-0.33/datatables.js"></script>
+
 <script src="../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<link href="../site_libs/dt-core-1.11.3/css/jquery.dataTables.min.css" rel="stylesheet">
-<link href="../site_libs/dt-core-1.11.3/css/jquery.dataTables.extra.css" rel="stylesheet">
-<script src="../site_libs/dt-core-1.11.3/js/jquery.dataTables.min.js"></script>
-<link href="../site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
-<script src="../site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+
+<link href="../site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+
+<link href="../site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
+
+<script src="../site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
+
+<link href="../site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+
+<script src="../site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+
 
 
 </head>
@@ -71,21 +94,27 @@ ul.task-list{list-style: none;}
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="../index.html">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">ASCEND - Data Management</span>
-  </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html">Home</a>
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-data" role="button" data-bs-toggle="dropdown" aria-expanded="false">Data</a>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-data" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Data</span>
+    </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-data">    
         <li>
     <a class="dropdown-item" href="../themes/Theme1.html">
@@ -110,18 +139,19 @@ ul.task-list{list-style: none;}
     </ul>
   </li>
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/ASCEND-BII"><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/ASCEND-BII"> <i class="bi bi-github" role="img">
 </i> 
- </a>
+<span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.spectralbiology.org/"><i class="bi bi-global" role="img">
+    <a class="nav-link" href="https://www.spectralbiology.org/"> <i class="bi bi-global" role="img">
 </i> 
- </a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -131,7 +161,8 @@ ul.task-list{list-style: none;}
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
 
 
 
@@ -139,15 +170,11 @@ ul.task-list{list-style: none;}
 <h1>Theme 3</h1>
 <section id="how-variation-across-the-tree-of-life-influences-species-interactions-dispersal-processes-and-the-assembly-of-communities-influencing-their-ecosystem-functions" class="level3">
 <h3 class="anchored" data-anchor-id="how-variation-across-the-tree-of-life-influences-species-interactions-dispersal-processes-and-the-assembly-of-communities-influencing-their-ecosystem-functions">How variation across the tree of life influences species interactions, dispersal processes and the assembly of communities influencing their ecosystem functions</h3>
-<div class="cell">
-
-</div>
 <p><br></p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div id="htmlwidget-bef42ea3a0fc36b2f535" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-bef42ea3a0fc36b2f535">{"x":{"filter":"none","vertical":false,"data":[[2021,2021,2021,2021,2021,2021,2021,2022,2022,2022,2022],["Avolio, ML, et al. Determinants of community compositional change are equally affected by global change. Ecology Letters 24:1892– 1904. DOI: <a href='https://doi.org/10.1111/ele.13824'>10.1111/ele.13824<\/a>.","Williams LJ, et al. Remote spectral detection of biodiversity effects on forest biomass. Nature Ecology & Evolution 5: 46– 54. DOI: <a href='https://doi.org/10.1038/s41559-020-01329-4'>10.1038/s41559-020-01329-4<\/a>.","Williams LJ, et al. Enhanced light interception and light use efficiency explain overyielding in young tree communities. Ecology Letters 24: 996– 1006. DOI: <a href='https://doi.org/10.1111/ele.13717'>10.1111/ele.13717<\/a>.","Mori AS, et al. Biodiversity-productivity relationships are key to nature-based climate solutions. Nature Climate Change 11: 543– 550. DOI: <a href='https://doi.org/10.1038/s41558-021-01062-1'>10.1038/s41558-021-01062-1<\/a>.","Pellegrini AFA, et al. Decadal changes in fire frequencies shift tree communities and functional traits. Nature Ecology and Evolution 5: 504–512. DOI: <a href='https://doi.org/10.1038/s41559-021-01401-7'>10.1038/s41559-021-01401-7<\/a>.","Pellegrini AFA, et al. Disease and fire interact to influence transitions between ecosystem states over a 54-year experiment. Ecology Letters 24: 1007– 1017. DOI: <a href='https://doi.org/10.1111/ele.13719'>10.1111/ele.13719<\/a>.","Guerrero Martinez NR et al. Global Root Traits (GRooT) Database. Global Ecology and Biogeography 30: 25– 37. DOI: <a href='https://doi.org/10.1111/geb.13179'>10.1111/geb.13179<\/a>.","Anoszko E, et al. Wind and fire: rapid shifts in community composition following multiple disturbances in the southern boreal forest. Ecosphere 13:e3952. DOI: <a href='https://doi.org/10.1002/ecs2.3952'>10.1002/ecs2.3952<\/a>.","Pubin Hong P, et al. Biodiversity promotes ecosystem functioning despite environmental change. Ecology Letters 25:555– 569. DOI: <a href='https://doi.org/10.1111/ele.13936'>10.1111/ele.13936<\/a>.","Urgoiti J, et al. No complementarity no gain—Net diversity effects on tree productivity occur once complementarity emerges during early stand development. Ecology Letters 25: 851–862. DOI: <a href='https://doi.org/10.1111/ele.13959'>10.1111/ele.13959<\/a>.","Belluau M, et al.  Exotics are more complementary over time in tree biodiversity–ecosystem functioning experiments. Functional Ecology 35:2550– 2561. DOI: <a href='https://doi.org/10.1111/1365-2435.13900'>10.1111/1365-2435.13900<\/a>."],["<a href='https://doi.org/10.6073/pasta/1d54a326d6420a678b1553d493bfca1a'>EDI Data Portal<\/a>","<a href='https://doi.org/10.13020/s7pf-am91'>Data Repository of UMN<\/a>","<a href='https://doi.org/10.5061/dryad.9w0vt4bf1'>Dryad<\/a>","<a href='https://doi.org/10.5061/dryad.vq83bk3s2'>Dryad<\/a>","<a href='https://datadryad.org/stash/dataset/doi:10.5061%2Fdryad.234'>Wood density<\/a>, <a href='https://onlinelibrary-wiley-com.ezp1.lib.umn.edu/action/downloadSupplement?doi=10.1111%2Fj.1365-2486.2011.02401.x&file=GCB_2401_sm_supplinfo.doc'>Supporting information<\/a>, <a href='https://www-jstor-org.ezp3.lib.umn.edu/stable/4216600?sid=primo&seq=2#metadata_info_tab_contents'>Jstor<\/a>, <a href='https://www.pnas.org/doi/full/10.1073/pnas.1906655116#data-availability'>Plant Tissue Stoichiometry & Mycorrhizal data<\/a> and <a href='https://static-content.springer.com/esm/art%3A10.1038%2Fs41559-021-01401-7/MediaObjects/41559_2021_1401_MOESM3_ESM.xlsx'>Supplementary Data<\/a>","<a href='https://figshare.com/articles/dataset/Dataset_for_oak_wilt/13729258/1'>Oak Wilt Dataset<\/a>","<a href='https://groot-database.github.io/GRooT/'>Github page<\/a>","<a href='https://conservancy.umn.edu/handle/11299/219223'>Data Repository of UMN<\/a>","<a href='https://doi.org/10.6084/m9.figshare.16947451.v1'>Figshare<\/a>","<a href='https://doi-org.ezp1.lib.umn.edu/10.6084/m9.figshare.14885907.v1'>Figshare<\/a>","<a href='https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/1365-2435.13900'>Dryad<\/a>"],["<a href='https://github.com/mavolio/CoRRE-Community-Change-Paper'>Github<\/a>","<a href='https://doi.org/10.13020/s7pf-am91'>UMN Data Repository<\/a>",null,null,null,null,"<a href='https://github.com/GRooT-Database/GRooT-Data'>Github<\/a>",null,null,null,null],["","","","","","","","","5","",""]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Year<\/th>\n      <th>Citation<\/th>\n      <th>Data<\/th>\n      <th>Code<\/th>\n      <th>Themes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-a9c88d865c4d53ebc641" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-a9c88d865c4d53ebc641">{"x":{"filter":"none","vertical":false,"data":[[2021,2021,2021,2023,2023,2022,2022,2023,2022,2021,2022,2021,2021,2022,2024,2022,2023,2021,2021,2022,2023,2022],["Guerrero Martinez NR et al. Global Root Traits (GRooT) Database. Global Ecology and Biogeography 30: 25- 37. DOI: <a href='https://doi.org/10.1111/geb.13179'>10.1111/geb.13179<\/a>.","Avolio, ML, et al. Determinants of community compositional change are equally affected by global change. Ecology Letters 24:1892- 1904. DOI: <a href='https://doi.org/10.1111/ele.13824'>10.1111/ele.13824<\/a>.","Williams LJ, et al. Remote spectral detection of biodiversity effects on forest biomass. Nature Ecology & Evolution 5: 46- 54. DOI: <a href='https://doi.org/10.1038/s41559-020-01329-4'>10.1038/s41559-020-01329-4<\/a>.","Leao T, et al. The geographic range size and vulnerability to extinction of angiosperm epiphytes in the Atlantic Forest of Brazil. Global Ecology and Biogeography 32:1607-1617. DOI: <a href='https://doi.org/10.1111/geb.13718'>10.1111/geb.13718<\/a>.","Dee L, et al. Clarifying the effect of biodiversity on productivity in natural ecosystems with longitudinal data and new methods for causal inference. Nature Communications 14 (1), 2607. DOI: <a href='https://www.nature.com/articles/s41467-023-37194-5'>NA<\/a>.","Anoszko E, et al. Wind and fire: rapid shifts in community composition following multiple disturbances in the southern boreal forest. Ecosphere 13:e3952. DOI: <a href='https://doi.org/10.1002/ecs2.3952'>10.1002/ecs2.3952<\/a>.","Belluau M, et al.  Exotics are more complementary over time in tree biodiversity-ecosystem functioning experiments. Functional Ecology 35:2550- 2561. DOI: <a href='https://doi.org/10.1111/1365-2435.13900'>10.1111/1365-2435.13900<\/a>.","Berthelot SJ, et al. Exotic Tree Species Have Consistently Lower Herbivore Load in a Cross-Atlantic Tree Biodiversity Experiment. Ecology 104(7): e4070. DOI: <a href='https://doi.org/10.1002/ecy.4070'>10.1002/ecy.4070<\/a>.","Schuster MJ, et al. Using plants to control buckthorn (Rhamnus cathartica): Improved biotic resistance of forests through revegetation. Ecological Engineering 182: 106730. DOI: <a href='https://doi.org/10.1016/j.ecoleng.2022.106730'>10.1016/j.ecoleng.2022.106730<\/a>.","Williams LJ, et al. Enhanced light interception and light use efficiency explain overyielding in young tree communities. Ecology Letters 24: 996- 1006. DOI: <a href='https://doi.org/10.1111/ele.13717'>10.1111/ele.13717<\/a>.","Maschler J, et al. Links across ecological scales: Plant biomass responses to elevated CO2. Global Change Biology, 28, 6115-6134. DOI: <a href='https://doi.org/10.1111/gcb.16351'>10.1111/gcb.16351<\/a>.","Leao TCC, et al. Projected impacts of climate and land use changes on the habitat of Atlantic Forest plants in Brazil. Global Ecology and Biogeography, 30, 2016-2028. DOI: <a href='https://doi.org/10.1111/geb.13365'>10.1111/geb.13365<\/a>.","Mori AS, et al. Biodiversity-productivity relationships are key to nature-based climate solutions. Nature Climate Change 11: 543- 550. DOI: <a href='https://doi.org/10.1038/s41558-021-01062-1'>10.1038/s41558-021-01062-1<\/a>.","Pubin Hong P, et al. Biodiversity promotes ecosystem functioning despite environmental change. Ecology Letters 25:555- 569. DOI: <a href='https://doi.org/10.1111/ele.13936'>10.1111/ele.13936<\/a>.","Blondeel H, et al. Tree diversity reduces variability in sapling survival under drought. Journal of Ecology, 112, 1164-1180. DOI: <a href='https://doi.org/10.1111/1365-2745.14294'>10.1111/1365-2745.14294<\/a>.","Urgoiti J, et al. No complementarity no gain--Net diversity effects on tree productivity occur once complementarity emerges during early stand development. Ecology Letters 25: 851-862. DOI: <a href='https://doi.org/10.1111/ele.13959'>10.1111/ele.13959<\/a>.","Fernandez CW, et al. Climate change-induced stress disrupts ectomycorrhizal interaction networks at the boreal-temperate ecotone. Proceedings of National Academy of Sciences 120 (34) e2221619120. DOI: <a href='https://doi.org/10.1073/pnas.2221619120'>10.1073/pnas.2221619120<\/a>.","Pellegrini AFA, et al. Disease and fire interact to influence transitions between ecosystem states over a 54-year experiment. Ecology Letters 24: 1007- 1017. DOI: <a href='https://doi.org/10.1111/ele.13719'>10.1111/ele.13719<\/a>.","Pellegrini AFA, et al. Decadal changes in fire frequencies shift tree communities and functional traits. Nature Ecology and Evolution 5: 504-512. DOI: <a href='https://doi.org/10.1038/s41559-021-01401-7'>10.1038/s41559-021-01401-7<\/a>.","Ohlert T, et al. Exploring the impact of trait number and type on functional diversity metrics in real-world ecosystems. PLOS ONE 19(9): e0306342. DOI: <a href='https://doi.org/10.1371/journal.pone.0272791'>10.1371/journal.pone.0272791<\/a>.","Bernath-Plaisted JS, et al. Microclimate complexity in temperate grasslands: implications for conservation and management under climate change. Environmental Research Letters 18 064023. DOI: <a href='https://doi.org/10.1088/1748-9326/acd4d3'>10.1088/1748-9326/acd4d3<\/a>.","Kong W, et al. Afforestation can lower microbial diversity and functionality in deep soil layers in a semiarid region. Global Change Biology, 28, 6086-6101. DOI: <a href='https://doi.org/10.1111/gcb.16334'>10.1111/gcb.16334<\/a>."],["<a href='https://groot-database.github.io/GRooT/'>Github page<\/a>","<a href='https://doi.org/10.6073/pasta/1d54a326d6420a678b1553d493bfca1a'>EDI Data Portal<\/a>","<a href='https://doi.org/10.13020/s7pf-am91'>Data Repository of UMN<\/a>","<a href='https://onlinelibrary.wiley.com/doi/10.1111/geb.13718#support-information-section'>Wiley<\/a>","<a href='https://doi.org/10.5281/zenodo.7675340'>Zenodo<\/a>","<a href='https://conservancy.umn.edu/handle/11299/219223'>Data Repository of UMN<\/a>","<a href='https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/1365-2435.13900'>Dryad<\/a>","<a href='https://doi.org/10.5061/dryad.1zcrjdfxd'>Dryad<\/a>","<a href='https://doi.org/10.5061/dryad.573n5tb9w'>Dryad<\/a>","<a href='https://doi.org/10.5061/dryad.9w0vt4bf1'>Dryad<\/a>","<a href='https://doi.org/10.5061/dryad.hhmgqnkk4'>Dryad<\/a>","<a href='https://doi.org/10.5061/dryad.ksn02v74h'>Dryad<\/a>","<a href='https://doi.org/10.5061/dryad.vq83bk3s2'>Dryad<\/a>","<a href='https://doi.org/10.6084/m9.figshare.16947451.v1'>Figshare<\/a>","<a href='https://doi.org/10.6084/m9.figshare.25359751'>Figshare<\/a>","<a href='https://doi-org.ezp1.lib.umn.edu/10.6084/m9.figshare.14885907.v1'>Figshare<\/a>","<a href='https://www.ncbi.nlm.nih.gov/bioproject?term=PRJNA561610'>NCBI<\/a> and <a href='http://www.pnas.org/lookup/doi/10.1073/pnas.2221619120#supplementary-materials'>PNAS<\/a>","<a href='https://figshare.com/articles/dataset/Dataset_for_oak_wilt/13729258/1'>Oak Wilt Dataset<\/a>","<a href='https://datadryad.org/stash/dataset/doi:10.5061%2Fdryad.234'>Wood density<\/a>, <a href='https://onlinelibrary-wiley-com.ezp1.lib.umn.edu/action/downloadSupplement?doi=10.1111%2Fj.1365-2486.2011.02401.x&file=GCB_2401_sm_supplinfo.doc'>Supporting information<\/a>, <a href='https://www-jstor-org.ezp3.lib.umn.edu/stable/4216600?sid=primo&seq=2#metadata_info_tab_contents'>Jstor<\/a>, <a href='https://www.pnas.org/doi/full/10.1073/pnas.1906655116#data-availability'>Plant Tissue Stoichiometry & Mycorrhizal data<\/a> and <a href='https://static-content.springer.com/esm/art%3A10.1038%2Fs41559-021-01401-7/MediaObjects/41559_2021_1401_MOESM3_ESM.xlsx'>Supplementary Data<\/a>","<a href='NA'>ll relevant data from this study will be made available upon study completion.<\/a>","<a href='NA'>Data upon request<\/a>","<a href='https://doi.org/10.5061/dryad.7sqv9s4vn'>Sequencing data are available in the NCBI Sequence Read Archive repository under the accession number PRJNA778306. The other data: [Dryad<\/a>"],["<a href='https://github.com/GRooT-Database/GRooT-Data'>Github<\/a>","<a href='https://github.com/mavolio/CoRRE-Community-Change-Paper'>Github<\/a>","<a href='https://doi.org/10.13020/s7pf-am91'>UMN Data Repository<\/a>","<a href='https://onlinelibrary.wiley.com/doi/10.1111/geb.13718#support-information-section'>Wiley<\/a>","<a href='https://doi.org/10.5281/zenodo.7675340'>Zenodo<\/a>",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],["","","","","","","","","4","","4,5","4","","5","","","","","","4","","4"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Year<\/th>\n      <th>Citation<\/th>\n      <th>Data<\/th>\n      <th>Code<\/th>\n      <th>Themes<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":0},{"name":"Year","targets":0},{"name":"Citation","targets":1},{"name":"Data","targets":2},{"name":"Code","targets":3},{"name":"Themes","targets":4}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 
@@ -183,12 +210,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     icon: icon
   };
   anchorJS.add('.anchored');
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
     }
-  });
-  clipboard.on('success', function(e) {
+    return false;
+  }
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -197,17 +227,71 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
-  function tippyHover(el, contentFn) {
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -217,49 +301,320 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">© CC-By ASCEND</div>   
-    <div class="nav-footer-right">Page updated on 2023-01-22</div>
+    <div class="nav-footer-left">
+<p>© CC-By ASCEND</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>Page updated on 2023-01-22</p>
+</div>
   </div>
 </footer>
+
 
 
 

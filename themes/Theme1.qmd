@@ -9,11 +9,12 @@ title: ""
 ```{r echo=F, results='hide'}
 library(DT)
 library(data.table)
-publications <- fread("themes.csv")
+publications <- fread("themes.csv", encoding = 'UTF-8')
+publications <- publications[!is.na(Theme)]
 theme <- subset(publications, Theme == "1")
 theme <- theme[, .SD, .SDcols = c(2:ncol(theme))]
 
-#Data links ------------------------------------------------------------------------
+#Data links -----------------------------------------------------------------------
 datalinks <- NA
 
 for(i in 1:nrow(theme)) {
@@ -23,7 +24,10 @@ for(i in 1:nrow(theme)) {
   data <- theme$Data[i]
   splitdata <- strsplit(data, split = ":&:")
   
-  for(ii in 1:length(splitdata[[1]])) {
+  if(length(splitdata[[1]]) == 0) {
+    datalinks[i] <- NA
+  } else {
+    for(ii in 1:length(splitdata[[1]])) {
     
     name <- strsplit(splitdata[[1]][ii], split = "]")
     base <- substr(name[[1]][1], 2, nchar(name[[1]][1]))
@@ -37,6 +41,7 @@ for(i in 1:nrow(theme)) {
     } else {
       cell_link <- paste0(cell_link, ", ", urls)
     }
+    }
   }
   
   datalinks[i] <- cell_link
@@ -45,7 +50,7 @@ for(i in 1:nrow(theme)) {
 
 theme$Data <- datalinks
 
-#DOI -------------------------------------------------------------------------------
+#DOI ------------------------------------------------------------------------------
 doilinks <- NA
 
 for(i in 1:nrow(theme)) {
@@ -60,7 +65,7 @@ for(i in 1:nrow(theme)) {
 theme$Link <- doilinks
 theme$Citation <- paste0(theme$Citation, " ", theme$Link)
 
-#Code links ------------------------------------------------------------------------
+#Code links -----------------------------------------------------------------------
 codelinks <- NA
 
 for(i in 1:nrow(theme)) {
